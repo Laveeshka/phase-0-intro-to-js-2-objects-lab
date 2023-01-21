@@ -10,8 +10,8 @@ const employee = {
 //it does not modify the original employee, but rather returns a clone with the new data
 //used the spread operator
 function updateEmployeeWithKeyAndValue(employee, key, value) {
-    const newEmployee = {...employee};
-    newEmployee[key] = value;
+    const newEmployee = {...employee, [key]: value};
+    // newEmployee[key] = value;
     return newEmployee;
 }
 
